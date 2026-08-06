@@ -1,7 +1,6 @@
 {
   "name": "lawyer-html",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -221,12 +220,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timndi/samislaw.git"
+    "url": "git+https://github.com/timndi/madonna.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/timndi/samislaw/issues"
+    "url": "https://github.com/timndi/madonna/issues"
   },
-  "homepage": "https://github.com/timndi/samislaw#readme"
+  "homepage": "https://github.com/timndi/madonna#readme",
+  "description": ""
 }

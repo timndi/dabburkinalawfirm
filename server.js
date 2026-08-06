@@ -89,38 +89,7 @@ app.get('/',function(req,res){
 });
 
 
-app.post('/contactUs',function(req,res){
-    console.log(req.body);
-    //res.send('thanks');
-    const newMessage = {
-        fullname: req.body.fullname,
-        email: req.body.email,
-        message: req.body.message,
-        date: new Date()
-    }    
 
-    new Message(newMessage).save(function(err, message){
-        if (err){
-            throw err;
-        }else{
-            Message.find({})
-            .then(function(messages){
-                if(messages){                    
-                    res.render('newmessage',{
-                        title: 'Sent',
-                        messages:messages
-                    });
-                }else{
-                    res.render('noMessage',{
-                        title: 'Not found'
-                    });
-                }
-            });
-        }
-        
-    });
-    
-});
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('Server is running on Port 3000');
