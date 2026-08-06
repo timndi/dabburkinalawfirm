@@ -36,9 +36,6 @@ app.get('/about-us',function(req,res){
 });
 
 
-app.get('/login',function(req,res){
-    res.render('login');
-});
 app.get('/contact-us',function(req,res){
     res.render('contact-us');
 });
@@ -51,24 +48,18 @@ app.get('/home',function(req,res){
 app.get('/loan',function(req,res){
     res.render('loan');
 });
-app.get('/real-estate',function(req,res){
-    res.render('real-estate');
-});
+
 app.get('/practice-areas',function(req,res){
     res.render('practice-areas');
 });
-app.get('/our-attorneys',function(req,res){
-    res.render('our-attorneys');
-});
+
 app.get('/corporate-&-business-law',function(req,res){
     res.render('corporate-&-business-law');
 });
 app.get('/business-agreements',function(req,res){
     res.render('business-agreements');
 });
-app.get('/international-law',function(req,res){
-    res.render('international-law');
-});
+
 app.get('/creditors-rights',function(req,res){
     res.render('creditors-rights');
 });
@@ -78,15 +69,7 @@ app.get('/business-disputes',function(req,res){
 app.get('/mediation',function(req,res){
     res.render('mediation');
 });
-app.get('/',function(req,res){
-    res.render('');
-});
-app.get('/',function(req,res){
-    res.render('');
-});
-app.get('/',function(req,res){
-    res.render('');
-});
+
 
 
 
